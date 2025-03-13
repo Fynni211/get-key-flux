@@ -23,8 +23,7 @@ function startCountdown() {
 // Funktion, um den Schlüssel von Pastebin abzurufen
 async function fetchKey() {
     try {
-        const response = await fetch('https://corsproxy.io/?' + encodeURIComponent('https://gist.githubusercontent.com/Fynni211/6cd1c8be46a81353460469fd7dc5ee79/raw/4f1e106fff71653f7cc015001dadf542bdb66a11/Get-key'));
-
+        const response = await fetch('https://api.allorigins.win/raw?url=' + encodeURIComponent('https://gist.githubusercontent.com/Fynni211/6cd1c8be46a81353460469fd7dc5ee79/raw/4f1e106fff71653f7cc015001dadf542bdb66a11/Get-key'));
         if (!response.ok) {
             throw new Error("Fehler beim Abrufen der Daten");
         }
