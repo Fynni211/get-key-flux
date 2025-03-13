@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Key</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkung der externen CSS-Datei -->
+</head>
+<body>
+    <div class="container">
+        <h1>Hole deinen Schlüssel</h1>
+        <div id="countdown-container">
+            <span id="countdown">30</span> Sekunden verbleibend...
+        </div>
+
+        <div id="button-container">
+            <button id="start-button" onclick="startCountdown()">Schlüssel Abrufen</button>
+        </div>
+
+        <div id="key-popup">
+            <p>Dein Schlüssel ist: <span id="key"></span></p>
+            <button onclick="closePopup()">Schließen</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Verlinkung der externen JavaScript-Datei -->
+</body>
+</html>
 
